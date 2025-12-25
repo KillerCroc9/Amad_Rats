@@ -4,7 +4,7 @@
 
 ## About
 
-This is a humorous website about Dr. Ammad, who is training rats to dominate the world through various "horrible experiments". The website features a dark hacker/laboratory theme and showcases fictional research projects and experiments.
+This is a humorous website about Dr. Ammad, a fictional character who is training rats as part of a mission to protect and honor his rodent companions. After befriending rats during a difficult period in China in 2020, where he witnessed mistreatment of these creatures, Dr. Ammad created an ambitious rat training program. The website features a dark hacker/laboratory theme and showcases fictional research projects and experiments.
 
 ## Features
 
