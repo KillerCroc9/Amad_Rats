@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammad's Rat Training Laboratory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #0a0a0a;
+            color: #00ff00;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d0a0a 100%);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 3px solid #ff0000;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #00ff00;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+            text-shadow: 0 0 5px #ff0000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background-color: #1a1a1a;
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        h2 {
+            color: #ff0000;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .warning {
+            background-color: #2d0a0a;
+            border: 2px solid #ff0000;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .warning::before {
+            content: "⚠️ WARNING: ";
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .experiment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .experiment-card {
+            background-color: #0d0d0d;
+            border: 1px solid #ff0000;
+            padding: 1.5rem;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .experiment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .experiment-card h3 {
+            color: #ff0000;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            border-top: 3px solid #ff0000;
+        }
+
+        .classified {
+            background-color: #000;
+            color: #ff0000;
+            padding: 0.2rem 0.5rem;
+            border: 1px solid #ff0000;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        ul li::before {
+            content: "🐀 ";
+            color: #ff0000;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background-color: #0d0d0d;
+            border: 2px solid #00ff00;
+            padding: 1.5rem;
+            text-align: center;
+            min-width: 150px;
+            margin: 0.5rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            color: #00ff00;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🐀 AMMAD'S RAT TRAINING LABORATORY 🐀</h1>
+        <p class="subtitle">Where Science Meets World Domination</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Dr. Ammad</h2>
+            <div class="warning">
+                This facility conducts highly experimental research. All experiments are classified.
+            </div>
+            <p>Welcome to the secret laboratory of Dr. Ammad, the world's foremost expert in rat behavioral modification and strategic training. For years, Dr. Ammad has been conducting groundbreaking (and slightly terrifying) research into the cognitive abilities of rodents.</p>
+            <p>What started as a simple science project has evolved into the most ambitious rat training program the world has never officially heard about. Through a combination of advanced neuroscience, behavioral conditioning, and what can only be described as "creative experimentation," Dr. Ammad is creating an army of highly intelligent, coordinated rats.</p>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">1,337</div>
+                    <div class="stat-label">Trained Rats</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">Active Experiments</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Ambition Level</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research Objectives</h2>
+            <p>The primary goal of this laboratory is to unlock the full potential of rat intelligence and create a coordinated network of rodent operatives capable of executing complex tasks. Our research focuses on:</p>
+            <ul>
+                <li>Enhanced cognitive development through neural stimulation</li>
+                <li>Complex problem-solving and strategic thinking</li>
+                <li>Advanced communication protocols between rat subjects</li>
+                <li>Physical conditioning for infiltration missions</li>
+                <li>Technology interface training (keyboard, switches, levers)</li>
+                <li>Social hierarchy manipulation and leadership training</li>
+                <li>Stealth operations and covert movement techniques</li>
+            </ul>
+            <p style="margin-top: 1rem;">Through these research initiatives, we are not just training rats—we are creating a sophisticated network of intelligent agents ready to... <span class="classified">[CLASSIFIED]</span></p>
+        </section>
+
+        <section id="experiments">
+            <h2>Ongoing Experiments</h2>
+            <div class="warning">
+                The following experiments are approved by the Internal Ethics Committee (which is just Dr. Ammad).
+            </div>
+            
+            <div class="experiment-grid">
+                <div class="experiment-card">
+                    <h3>Project: Maze Master</h3>
+                    <p>Training rats to navigate increasingly complex mazes while solving puzzles and avoiding detection. Current subjects can complete a 100-room maze in under 3 minutes.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #00ff00;">Active</span></p>
+                </div>
+
+                <div class="experiment-card">
+                    <h3>Project: Cyber Rat</h3>
+                    <p>Teaching rats to operate computer keyboards and execute simple commands. Three subjects have successfully learned to type "cheese" and "freedom".</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #00ff00;">Active</span></p>
+                </div>
+
+                <div class="experiment-card">
+                    <h3>Project: Rat Pack</h3>
+                    <p>Developing coordinated group tactics where 50+ rats work together to achieve complex objectives. Recent success: opening a locked door from the inside.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #00ff00;">Active</span></p>
+                </div>
+
+                <div class="experiment-card">
+                    <h3>Project: Night Crawler</h3>
+                    <p>Training in stealth operations, ventilation system navigation, and surveillance. Subjects can now move silently and report back location details.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #ff0000;">CLASSIFIED</span></p>
+                </div>
+
+                <div class="experiment-card">
+                    <h3>Project: Mind Meld</h3>
+                    <p>Experimental neural linking research attempting to create a hive-mind connection between subjects. Results are... concerning.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #ff0000;">HIGH PRIORITY</span></p>
+                </div>
+
+                <div class="experiment-card">
+                    <h3>Project: Operation Cheese Heist</h3>
+                    <p>Full-scale simulation of a coordinated infiltration and extraction mission. Success rate: 87%. The other 13% ate the evidence.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Status:</strong> <span style="color: #00ff00;">Testing Phase</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="warning">
+                All communications are monitored and encrypted. Do not attempt to contact regulatory authorities.
+            </div>
+            <p><strong>Facility Location:</strong> <span class="classified">[REDACTED]</span></p>
+            <p><strong>Email:</strong> dr.ammad@totally-legitimate-lab.secret</p>
+            <p><strong>Lab Hours:</strong> 24/7 (Rats never sleep, neither do we)</p>
+            <p><strong>Recruitment:</strong> Always looking for ambitious individuals who share our vision of a rat-governed future</p>
+            
+            <p style="margin-top: 2rem; font-style: italic; color: #888;">
+                Disclaimer: This website is for entertainment purposes only. No actual rats were harmed in the making of this website. Dr. Ammad is a fictional character. Please do not attempt to train rats for world domination. That would be weird.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ammad's Rat Training Laboratory</p>
+        <p style="color: #888; margin-top: 0.5rem;">Proudly working toward a rodent-controlled tomorrow</p>
+        <p style="color: #ff0000; margin-top: 1rem; font-size: 0.8rem;">⚠️ IF YOU ARE A REGULATORY AUTHORITY, THIS SITE DOES NOT EXIST ⚠️</p>
+    </footer>
+</body>
+</html>
